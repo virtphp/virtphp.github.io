@@ -270,7 +270,7 @@ function installVirtphp($installDir, $quiet)
             out("Downloading...", 'info');
         }
 
-        $source = (extension_loaded('openssl') ? 'https' : 'http').'://virtphp.org/virtphp.phar';
+        $source = 'http://virtphp.org/virtphp.phar';
         $errorHandler = new ErrorHandler();
         set_error_handler(array($errorHandler, 'handleError'));
 
