@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Virtphp.github.io : VirtPHP website" />
+    <head>
+        <meta charset='utf-8' />
+        <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+        <meta name="description" content="Virtphp.github.io : VirtPHP website" />
+        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+        <title>VirtPHP</title>
+    </head>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <body>
 
-    <title>VirtPHP</title>
-  </head>
+        <!-- HEADER -->
+        <div id="header_wrap" class="outer">
+            <header class="inner">
+            <a id="forkme_banner" href="https://github.com/virtphp">View on GitHub</a>
+            <h1 id="project_title">VirtPHP</h1>
+            <h2 id="project_tagline">Isolated PHP environments</h2>
+            </header>
+        </div>
 
-  <body>
+        <!-- MAIN CONTENT -->
+        <div id="main_content_wrap" class="outer">
+            <section id="main_content" class="inner">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/virtphp">View on GitHub</a>
+                <h3>What Is VirtPHP?</h3>
 
-          <h1 id="project_title">VirtPHP</h1>
-          <h2 id="project_tagline">Isolated PHP environments</h2>
+                <p>VirtPHP is a tool for creating isolated PHP environments. Think <a href="http://virtualenv.org/">virtualenv</a> for PHP.</p>
 
-        </header>
-    </div>
+                <p>Most people have systems with one PHP, one place to install PEAR packages, and one place to install PECL extensions, and those are the versions that must be used for all development on that system. That's not really ideal if you need to do development using various versions of PEAR packages or PECL extensions.</p>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+                <p><em>VirtPHP to the rescue!</em></p>
 
-<h3>Installing VirtPHP</h3>
+                <p>VirtPHP creates isolated environments so that you may run any number of PHP development projects, all using different versions of PEAR packages and different PECL extensions. You may even specify a different version of PHP, if your system has various installations of PHP (i.e. you've built multiple versions for testing).</p>
 
-<p>Run this in your terminal to get the latest VirtPHP version:</p>
+                <h3>Is It Ready? Can I Use It?</h3>
 
-<pre><code>$ curl -sS http://virtphp.org/installer | php</code></pre>
+                <p>No. It's not ready yet.</p>
 
-<p>Or if you don't have curl:</p>
+                <p>We developed VirtPHP over the span of 48 hours at <a href="http://hacknashville.com/">Hack Nashville</a> on May 4-5, 2013. So, it's still very new. We haven't even dusted the wood shavings off or sanded down the rough edges yet.</p>
 
-<pre><code>php -r "eval('?&gt;'.file_get_contents('http://virtphp.org/installer'));"</code></pre>
+                <p>Before VirtPHP is ready to release to the wild and open for pull requests and your contributions, we have some clean-up work to do. So, be patient. You'll be able to try it out soon!</p>
 
-<p>This installer script will simply check some php.ini settings, warn you if they are set incorrectly, and then download the latest virtphp.phar in the current directory</p>
+                <h3>PHP Is For Web Development. How Will This Work With Web Servers?</h3>
 
-<h3>Installer Options</h3>
+                <p>We're still figuring that out. We'll probably need your help.</p>
 
-<p>You can install VirtPHP to a specific directory by using the <code>--install-dir</code> option and providing a target directory. Options must be appended to <code>--</code> so that PHP ignores them, like <code>-- --install-dir=/usr/local/bin</code>, example:</p>
+                <h3>How Will It Be Licensed?</h3>
 
-<pre><code>curl -sS http://virtphp.org/installer | php -- --install-dir=bin</code></pre>
+                <p>VirtPHP will be released under the <a href="http://opensource.org/licenses/MIT">MIT License</a>.</p>
 
-      </section>
-    </div>
+                <h3>Who's Responsible?</h3>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+                <p>The team behind VirtPHP is Jordan Kasper (<a href="https://twitter.com/jakerella">@jakerella</a>), Ben Ramsey (<a href="https://twitter.com/ramsey">@ramsey</a>), and Jacques Woodcock (<a href="https://twitter.com/jacques_thekit">@jacques_thekit</a>).</p>
 
-    
+            </section>
+        </div>
 
-  </body>
+        <!-- FOOTER  -->
+        <div id="footer_wrap" class="outer">
+            <footer class="inner">
+            <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+            </footer>
+        </div>
+
+
+
+    </body>
 </html>
