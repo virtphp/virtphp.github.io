@@ -1,0 +1,126 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ed7443;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 40px;
+    color: #3289b2;
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#header {
+    background: url("../images/blue_background.png") top left;
+    min-height: 509px;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+#elephants {
+    padding-top: 39px;
+    background: url("../images/elephant.png") bottom left repeat-x;
+    height: 155px;
+}
+
+#content {
+    padding-top: 30px;
+    color: #ffffff;
+    width: 100%;
+    position: absolute;
+    margin-top: 509px;
+    background: #ed7443;
+    width: 100%;
+    text-align: center;
+}
+
+#content_holder {
+    width: 70%;
+    margin: 0px auto;
+    text-align: left;
+}
+
+#content p {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 0px;
+    padding: 5px;
+    background: #ce5e30;
+}
+
+.code {
+    background: #cccccc;
+    font-size: 18px;
+    padding: 2px;
+    color: #333333;
+    font-style: italic;
+}
+
+#github {
+    background: url('../images/github.png') top left no-repeat;
+    padding: 5px 5px 0px 30px;
+    height: 30px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#github:hover {
+    background-color: #ce5e30;
+}
+
+#download {
+    float: right;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 11;
+    cursor: pointer;
+    padding: 3px;
+}
+
+#download:hover {
+    background-color: #ce5e30;
+}
+
+#on_github {
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
+    padding-top: 100px;
+    color: #000000;
+    text-align: center;
+    font-size: 70px;
+    background: #ffffff;
+    -moz-border-radius-topright: 25px 50px;
+    -moz-border-radius-topleft: 25px 50px;
+    border-top-right-radius: 25px 50px;
+    border-top-left-radius: 25px 50px;
+    cursor: pointer;
+}
+
+.noncontent_link {
+    font-weight: normal;
+    color: #000000;
+}
