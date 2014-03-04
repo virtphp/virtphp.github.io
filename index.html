@@ -5,66 +5,62 @@
         <meta charset='utf-8' />
         <meta http-equiv="X-UA-Compatible" content="chrome=1" />
         <meta name="description" content="Virtphp.github.io : VirtPHP website" />
-        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/version2.css">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,200' rel='stylesheet' type='text/css'>
         <title>VirtPHP</title>
     </head>
 
     <body>
-
-        <!-- HEADER -->
-        <div id="header_wrap" class="outer">
-            <header class="inner">
-            <a id="forkme_banner" href="https://github.com/virtphp">View on GitHub</a>
-            <h1 id="project_title">VirtPHP</h1>
-            <h2 id="project_tagline">Isolated PHP environments</h2>
-            </header>
+        <div id="github" onclick="window.location='https://github.com/virtphp/virtphp'">Fork me on GitHub</div>
+        <div id="download" onclick="window.location='https://github.com/jwoodcock/virtphp/releases/tag/v0.1.0-alpha'">Download the Latest</div>
+        <div id="header">
+            <div id="logo">
+                <img src="images/logo_lg.png" border="0" />
+            </div>
+            <h2>1 Box, Multiple Elephants</h2>
+            <div id="elephants"></div>
         </div>
-
-        <!-- MAIN CONTENT -->
-        <div id="main_content_wrap" class="outer">
-            <section id="main_content" class="inner">
-
+        <div id="content">
+            <div id="content_holder">
                 <h3>What Is VirtPHP?</h3>
+                <p>VirtPHP is a tool for creating and managing multiple isolated PHP environments on a single machine. It's like Python's <a href="http://www.virtualenv.org/en/latest/" target="_blank">virtualenv</a>, but for PHP.</p>
 
-                <p>VirtPHP is a tool for creating isolated PHP environments. Think <a href="http://virtualenv.org/">virtualenv</a> for PHP.</p>
+                <p>VirtPHP creates isolated environments so that you may run any number of PHP development projects, all using different versions of PEAR packages and different PECL extensions. You may even specify a different version of PHP, if your system has various installations of PHP.</p>
 
-                <p>Most people have systems with one PHP, one place to install PEAR packages, and one place to install PECL extensions, and those are the versions that must be used for all development on that system. That's not really ideal if you need to do development using various versions of PEAR packages or PECL extensions.</p>
+                <p>To install multiple versions of PHP, we suggest taking a look at the phpenv and php-build projects and using VirtPHP with them, to manage multiple virtual PHP environments.</p>
 
-                <p><em>VirtPHP to the rescue!</em></p>
+                <p>Note: VirtPHP is currently only targeted to command line php (php-cli) for *nix based systems.</p>
 
-                <p>VirtPHP creates isolated environments so that you may run any number of PHP development projects, all using different versions of PEAR packages and different PECL extensions. You may even specify a different version of PHP, if your system has various installations of PHP (i.e. you've built multiple versions for testing).</p>
+                <p style="background:none;">&nbsp;</p>
 
-                <h3>Is It Ready? Can I Use It?</h3>
+                <h3>Installation</h3>
+                <p>Download the <span class="code">virtphp.phar</span> file from the <a href="https://github.com/virtphp/virtphp/releases" target="_blank">latest release</a> and place it in <span class="code">/usr/local/bin</span> or wherever it's accessible from your <span class="code">PATH</span>.</p>
 
-                <p>No. It's not ready yet.</p>
+                <p>Optionally, you may clone this repository and build the phar file yourself.</p>
 
-                <p>We developed VirtPHP over the span of 48 hours at <a href="http://hacknashville.com/">Hack Nashville</a> on May 4-5, 2013. So, it's still very new. We haven't even dusted the wood shavings off or sanded down the rough edges yet.</p>
+                <p style="background:none;">&nbsp;</p>
 
-                <p>Before VirtPHP is ready to release to the wild and open for pull requests and your contributions, we have some clean-up work to do. So, be patient. You'll be able to try it out soon!</p>
+                <h3>Usage</h3>
+                <p>VirtPHP is a command-line tool. To get started, you'll probably want to check out what it can do. To do this, just execute it without any arguments, like this:</p>
 
-                <h3>PHP Is For Web Development. How Will This Work With Web Servers?</h3>
+                <p><span class="code">php virtphp.phar</span></p>
+                <p>If you have the phar file set executable (i.e. chmod 755), then you can execute it like this:</p>
 
-                <p>We're still figuring that out. We'll probably need your help.</p>
+                <p><span class="code">./virtphp.phar</p>
+                <p>Or, if it's in your PATH, like this:</p>
 
-                <h3>How Will It Be Licensed?</h3>
+                <p><span class="code">virtphp.phar</p>
+                <p>We recommend putting it in your PATH and aliasing it to virtphp, so that you can run it like this:</p>
 
-                <p>VirtPHP will be released under the <a href="http://opensource.org/licenses/MIT">MIT License</a>.</p>
-
-                <h3>Who's Responsible?</h3>
-
-                <p>The team behind VirtPHP is Jordan Kasper (<a href="https://twitter.com/jakerella">@jakerella</a>), Ben Ramsey (<a href="https://twitter.com/ramsey">@ramsey</a>), and Jacques Woodcock (<a href="https://twitter.com/jacques_thekit">@jacques_thekit</a>).</p>
-
-            </section>
+                <p><span class="code">virtphp
+                <p>For convenience, the following examples will assume you have simply downloaded virtphp.phar and have not placed it in your PATH or set it executable.</p>
+                <a href="https://github.com/virtphp/virtphp">
+                    <div id="on_github">
+                        <img src="images/github.png" border="0" />
+                        Learn more on GitHub
+                    </div>
+                </a>
+            </div>
         </div>
-
-        <!-- FOOTER  -->
-        <div id="footer_wrap" class="outer">
-            <footer class="inner">
-            <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-            </footer>
-        </div>
-
-
-
     </body>
 </html>
