@@ -50,6 +50,7 @@ a {
     background: #ed7443;
     width: 100%;
     text-align: center;
+    -webkit-transform: translate3d(0,0,0);
 }
 
 #content_holder {
